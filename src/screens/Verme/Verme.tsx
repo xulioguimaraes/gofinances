@@ -18,10 +18,10 @@ export const Verme = ({ route }: VermeProps) => {
     const [modalVisible, setModalVisible] = React.useState(false);
     const initialRef = useRef(null);
     const finalRef = useRef(null);
-    useEffect(() => {
-        if (askRight)
-            setAskRight(false)
-    }, [askRight])
+    const onRequestClose = () => {
+        setModalVisible(false)
+        setAskRight(false)
+    }
 
     const allVermes = [
         {
@@ -126,7 +126,7 @@ export const Verme = ({ route }: VermeProps) => {
         </ScrollView>
         <Modal
             isOpen={modalVisible}
-            onClose={() => setModalVisible(false)}
+            onClose={onRequestClose}
             initialFocusRef={initialRef}
             finalFocusRef={finalRef}>
             <Modal.Content>
@@ -163,12 +163,9 @@ export const Verme = ({ route }: VermeProps) => {
                     </Modal.Body>}
                 <Modal.Footer>
                     <Button.Group space={2}>
-                        <Button variant="ghost" colorScheme="blueGray" onPress={() => {
-                            setModalVisible(false);
-                        }}>
-                            Fechar
+                        <Button variant="ghost" colorScheme="blueGray" onPress={onRequestClose}>
+                            Ir para explicação
                         </Button>
-
                     </Button.Group>
                 </Modal.Footer>
             </Modal.Content>

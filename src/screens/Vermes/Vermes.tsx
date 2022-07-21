@@ -33,14 +33,14 @@ export const Vermes = () => {
   return (
 
     <>
-      <Box mt="5">
-        <FlatList data={data} renderItem={({
+      <Center mt="2" >
+        <FlatList  data={data} renderItem={({
           item
         }) => <CardVermes
             nameImage={item.image}
             title={item.title.toUpperCase()} />}
           keyExtractor={item => item.title} />
-      </Box>
+      </Center>
     </>
   )
 }

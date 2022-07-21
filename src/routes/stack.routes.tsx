@@ -10,7 +10,7 @@ const Stack = createStackNavigator();
 export const StackRoutes = () => {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="home" component={Home} options={{ headerShown: false }} />
+            <Stack.Screen name="home" component={Home} options={{ headerTitle: "Pagina Inicial" }} />
             <Stack.Screen name="vermes" component={Vermes} options={{ headerTitle: "Lista de Verminoses" }} />
             <Stack.Screen name="question" component={Question} options={{ headerTitle: "Questões Problematizadora" }} />
             <Stack.Screen name="credits" component={Credits} options={{ headerTitle: "Creditos" }} />
