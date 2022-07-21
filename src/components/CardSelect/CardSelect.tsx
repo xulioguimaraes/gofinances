@@ -19,7 +19,7 @@ export const CardSelect = ({ imageSelect, setImageSelect, value }: CardSelectPro
         >
             <Pressable onPress={() => setImageSelect(value)}>
                 <AspectRatio h="100%" ratio={16 / 9}>
-                    <Image w="90%" h="100%" source={require("../../assets/TENIASE.jpg")} alt="image" />
+                    <Image w="90%" h="100%" source={require("../../../assets/TENIASE.jpg")} alt="image" />
                 </AspectRatio>
             </Pressable>
         </Center>

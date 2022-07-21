@@ -1,7 +1,7 @@
 import { ParamListBase, useNavigation } from '@react-navigation/native'
-import { AspectRatio, Box, Button, Center, Heading, HStack, Image, IStackProps, Pressable, Stack } from 'native-base'
-
+import { AspectRatio, Box, Button, ChevronLeftIcon, ChevronRightIcon, Heading, HStack, Icon, Image, IStackProps, Pressable, Stack } from 'native-base'
 import { PressableAnimation } from '../PressableAnimation/PressableAnimation'
+import { AddIcon } from "@native-base/icons"
 interface CardHomeProps {
     title: string
     urlImage: string
@@ -9,12 +9,12 @@ interface CardHomeProps {
 }
 export const CardHome = ({ title, urlImage, page }: CardHomeProps) => {
     const image = urlImage === "FILARIOSE" ?
-        require("../../assets/FILARIOSE2.jpg") :
+        require("../../../assets/Home/FILARIOSE2.jpg") :
         urlImage === "GLOSSARIO" ?
-            require("../../assets/GLOSSARIO.jpg") :
+            require("../../../assets/Home/GLOSSARIO.jpg") :
             urlImage === "CREDITOS" ?
-                require("../../assets/preta.jpg") :
-                require("../../assets/question.jpg")
+                require("../../../assets/Home/preta.jpg") :
+                require("../../../assets/Home/question.jpg")
 
     const navigation = useNavigation()
     const handleOpenPage = () => {
@@ -27,6 +27,7 @@ export const CardHome = ({ title, urlImage, page }: CardHomeProps) => {
         }} borderColor="coolGray.200" pl="4" pr="4" py="2">
             <HStack justifyContent="center">
                 <Box alignItems="center">
+
                     <Box
                         maxW="80"
                         rounded="lg"
@@ -51,20 +52,21 @@ export const CardHome = ({ title, urlImage, page }: CardHomeProps) => {
                                     alt="image" />
                             </AspectRatio>
                         </Box>
-                        <Button
+                        <Pressable
                             p="4"
                             bgColor="white"
                             onPress={handleOpenPage}
-                            justifyContent='space-between'
                         >
-                            <Stack space={2}>
+                            <HStack alignItems="center" justifyContent="space-between" space={2}>
                                 <Heading
                                     size="sm"
                                     ml="-1">
                                     {title}
                                 </Heading>
-                            </Stack>
-                        </Button>
+                              <ChevronRightIcon/>
+                            </HStack>
+
+                        </Pressable>
                     </Box>
                 </Box>
             </HStack>

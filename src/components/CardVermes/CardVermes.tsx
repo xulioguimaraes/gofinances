@@ -8,17 +8,17 @@ interface CardVermesProps {
 }
 export const CardVermes = ({ nameImage, title }: CardVermesProps) => {
     const image = nameImage === "ANCILOSTOMÍASE" ?
-        require("../../assets/ANCILOSTOMÍASE.jpg") :
+        require("../../../assets/vermes/ANCILOSTOMÍASE.jpg") :
         nameImage === "ASCARIDÍASE" ?
-            require("../../assets/ASCARIDÍASE.jpg") :
+            require("../../../assets/vermes/ASCARIDÍASE.jpg") :
             nameImage === "ENTEROBÍASE" ?
-                require("../../assets/ENTEROBÍASE.png") :
+                require("../../../assets/vermes/ENTEROBÍASE.png") :
                 nameImage === "ESQUISTOSSOMOSE" ?
-                    require("../../assets/ESQUISTOSSOMOSE.png") :
+                    require("../../../assets/vermes/ESQUISTOSSOMOSE.png") :
                     nameImage === "FILARIOSE" ?
-                        require("../../assets/FILARIOSE.png") :
+                        require("../../../assets/vermes/FILARIOSE.png") :
                         nameImage === "TENIASE" ?
-                            require("../../assets/TENIASE.jpg") : require("../../assets/TRICURÍASE.png")
+                            require("../../../assets/vermes/TENIASE.jpg") : require("../../../assets/vermes/TRICURÍASE.png")
     const navigation = useNavigation()
     const handleOpenVerme = () => {
         navigation.navigate("verme", { vermeId: 11 })
