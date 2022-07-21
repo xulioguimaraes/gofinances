@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Button, Center, Flex, FormControl, Heading, HStack, Image, Input, Modal, Pressable, ScrollView, Stack, Text, VStack } from 'native-base'
+import { AspectRatio, Box, Button, Center, Flex, FormControl, Heading, HStack, Image, Input, Modal, Pressable, ScrollView, Stack, StatusBar, Text, VStack } from 'native-base'
 import React, { useEffect, useRef, useState } from 'react'
 import { CardSelect } from '../../components/CardSelect/CardSelect'
 

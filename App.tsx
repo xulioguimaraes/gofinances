@@ -9,7 +9,7 @@ import {
 
 } from "@expo-google-fonts/poppins"
 import { Vermes } from './src/screens/Vermes/Vermes';
-import { NativeBaseProvider } from 'native-base';
+import { NativeBaseProvider, StatusBar } from 'native-base';
 import { Routes } from './src/routes';
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,6 +23,7 @@ export default function App() {
   return (
     <NativeBaseProvider>
       <ThemeProvider theme={theme}>
+        <StatusBar />
         <Routes />
       </ThemeProvider>
     </NativeBaseProvider>
