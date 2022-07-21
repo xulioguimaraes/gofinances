@@ -1,7 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import theme from './src/global/styles/theme';
-import { Dashboard } from './src/screens/Dashboard/Dashboard';
 import {
   useFonts,
   Poppins_400Regular,
@@ -9,6 +8,9 @@ import {
   Poppins_700Bold
 
 } from "@expo-google-fonts/poppins"
+import { Vermes } from './src/screens/Vermes/Vermes';
+import { NativeBaseProvider } from 'native-base';
+import { Routes } from './src/routes';
 export default function App() {
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
@@ -19,9 +21,11 @@ export default function App() {
     return null
   }
   return (
-    <ThemeProvider theme={theme}>
-      <Dashboard />
-    </ThemeProvider>
+    <NativeBaseProvider>
+      <ThemeProvider theme={theme}>
+        <Routes />
+      </ThemeProvider>
+    </NativeBaseProvider>
   );
 }
 
