@@ -1,6 +1,8 @@
-import { AspectRatio, Box, Button, Center, Flex, FormControl, Heading, HStack, Image, Input, Modal, Pressable, ScrollView, Stack, StatusBar, Text, VStack } from 'native-base'
+import { ArrowBackIcon, AspectRatio, Box, Button, Center, Container, Flex, FormControl, Heading, HStack, IconButton, Image, Input, Modal, Pressable, ScrollView, Stack, StatusBar, Text, VStack } from 'native-base'
 import React, { useEffect, useRef, useState } from 'react'
+import { getBottomSpace, getStatusBarHeight } from 'react-native-iphone-x-helper'
 import { CardSelect } from '../../components/CardSelect/CardSelect'
+import { allVermes } from '../../utils/vermes'
 
 interface RoutesProps {
     params: {
@@ -9,11 +11,15 @@ interface RoutesProps {
 }
 interface VermeProps {
     route: RoutesProps
+    navigation: {
+        goBack: () => void
+    }
 }
-export const Verme = ({ route }: VermeProps) => {
+export const Verme = ({ route, navigation }: VermeProps) => {
     const { params } = route
     const [imageSelect, setImageSelect] = useState(0)
     const [askRight, setAskRight] = useState(false)
+    const [contentInfo, setContentInfo] = useState(false)
     const [valueImageRight, setValueImageRight] = useState(2)
     const [modalVisible, setModalVisible] = React.useState(false);
     const initialRef = useRef(null);
@@ -21,49 +27,9 @@ export const Verme = ({ route }: VermeProps) => {
     const onRequestClose = () => {
         setModalVisible(false)
         setAskRight(false)
+        setContentInfo(true)
     }
 
-    const allVermes = [
-        {
-            name: "ANCILOSTOMÍASE OU AMARELÃO ",
-            id: 11,
-            question: "Você Sabia que esta verminose é também conhecida como amarelão ou opilação pois causa uma intensa perda de sangue e a pessoa fica anêmica? ",
-            content: [
-                {
-                    title: "PARASITA",
-                    text: "Esta infecção é causada pelos vermes Ancylostoma duodenale e Necator americanus.",
-                    image: "",
-                },
-                {
-                    title: "Adultos",
-                    text: "Os machos de N. Americanus medem de 5 a 9 mm de comprimento e na região posterior tem bolsa copuladora e dois espículos. As fêmeas medem 9 a 11 mm de comprimento e tem extremidade anterior afilada. Os machos de A. duodenale medem de 8 a 11 mm de comprimento, tem bolsa copuladora e dois espículos longos. As fêmeas tem de 10 a 18 mm de comprimento e cauda afilada. N. americanus tem lâminas cortantes na boca e A. duodenale tem dentes. ",
-                    image: "",
-                },
-                {
-                    title: "Ovos",
-                    text: "São liberados nas fezes do hospedeiro. somente visíveis ao microscópio ",
-                    image: "",
-                },
-                {
-                    title: "Larvas",
-                    text: "Do tipo rabidtóide. ",
-                    image: "",
-                }
-            ]
-        }, {
-            name: "ASCARIDÍASE OU INFECÇÃO POR LOMBRIGA"
-        }, {
-            name: "ENTEROBÍASE"
-        }, {
-            name: "ESQUISTOSSOMOSE MANSONI"
-        }, {
-            name: "FILARIOSE LINFÁTICA"
-        }, {
-            name: "TENÍASE"
-        }, {
-            name: "TRICURÍASE OU INFECÇÃO POR VERME-CHICOTE"
-        }
-    ]
     const handleSelectImage = () => {
         if (valueImageRight === imageSelect) {
             setAskRight(true)
@@ -71,59 +37,74 @@ export const Verme = ({ route }: VermeProps) => {
         setModalVisible(true)
     }
     return (<>
-        <ScrollView
-            px={2}
-            mt="6">
-            <Center>
-                <Text fontSize="xl" fontWeight="bold">{allVermes[0].name}</Text>
-            </Center>
-            <Box
-                py={4}
-                mt={2}
-                px={6}
-                shadow={3}
-                rounded={8}
-                bgColor='white'>
-                <Text fontWeight="normal" textAlign='justify'>{allVermes[0].question}</Text>
-            </Box>
-            <Heading
-                py={4}
-                fontSize="md"
-                textAlign='center'
-                background="violet.200"
-            >Responda a pergunta abaixo para continuar</Heading>
-            <Box
-                p={4}
-                mb={2}
-                rounded={8}
-                backgroundColor="blueGray.300">
-                <Text>Qual a forma de transmição da {allVermes[0].name}?</Text>
-                <Stack
-                    justifyContent="center"
-                    mt={4}
-                    space={2}>
-                    <HStack justifyContent="center" space={2}>
+        <HStack
+            space={1}
+            p={2}
+            alignItems='center'
+            background="#FFF">
+            <IconButton
+                onPress={navigation.goBack}
+                icon={<ArrowBackIcon />} />
+            <Heading fontSize="2xl">{allVermes[0].name}</Heading>
+        </HStack>
+        {!contentInfo && <>
+            <ScrollView
+                px={2}
+                mt="6">
+                <Box
+                    py={4}
+                    mt={2}
+                    px={6}
+                    shadow={3}
+                    rounded={8}
+                    bgColor='white'>
+                    <Text fontWeight="normal" textAlign='justify'>{allVermes[0].question}</Text>
+                </Box>
+                <Heading
+                    py={4}
+                    fontSize="md"
+                    textAlign='center'
+                    background="violet.200"
+                >Responda a pergunta abaixo para continuar</Heading>
+                <Box
+                    p={4}
+                    mb={2}
+                    rounded={8}
+                    backgroundColor="blueGray.300">
+                    <Text>Qual a forma de transmição da {allVermes[0].name}?</Text>
+                    <Stack
+                        justifyContent="center"
+                        mt={4}
+                        space={2}>
+                        <HStack justifyContent="center" space={2}>
 
-                        <CardSelect
-                            imageSelect={imageSelect}
-                            value={1}
-                            setImageSelect={setImageSelect} />
-                        <CardSelect imageSelect={imageSelect}
-                            value={2}
-                            setImageSelect={setImageSelect} />
-                    </HStack>
-                    <HStack justifyContent="center" space={2}>
-                        <CardSelect imageSelect={imageSelect}
-                            value={3}
-                            setImageSelect={setImageSelect} />
-                        <CardSelect imageSelect={imageSelect}
-                            value={4}
-                            setImageSelect={setImageSelect} />
-                    </HStack>
-                    <Button ref={finalRef} width="full" onPress={handleSelectImage} bgColor="success.500">Confirmar</Button>
-                </Stack>
-            </Box>
-        </ScrollView>
+                            <CardSelect
+                                imageSelect={imageSelect}
+                                value={1}
+                                setImageSelect={setImageSelect} />
+                            <CardSelect imageSelect={imageSelect}
+                                value={2}
+                                setImageSelect={setImageSelect} />
+                        </HStack>
+                        <HStack justifyContent="center" space={2}>
+                            <CardSelect imageSelect={imageSelect}
+                                value={3}
+                                setImageSelect={setImageSelect} />
+                            <CardSelect imageSelect={imageSelect}
+                                value={4}
+                                setImageSelect={setImageSelect} />
+                        </HStack>
+                        <Button
+                            ref={finalRef}
+                            isDisabled={imageSelect === 0}
+                            width="full"
+                            onPress={handleSelectImage}
+                            bgColor="success.500"
+                        >Confirmar</Button>
+                    </Stack>
+                </Box>
+            </ScrollView>
+        </>}
         <Modal
             isOpen={modalVisible}
             onClose={onRequestClose}
@@ -144,22 +125,21 @@ export const Verme = ({ route }: VermeProps) => {
                         Explicação sobre a resposta
                     </Text>
                 </Modal.Body> :
-                    <Modal.Body>
-                        <Heading>A Imagem correta é: </Heading>
+                    <Modal.Body >
+                       <Box flex={1}>
+                       <Heading>A Imagem correta é: </Heading>
                         <Center
                             h="40"
-                            w="90%"
                             overflow="hidden"
                             rounded="md"
                             shadow={3}
                         >
-                            <AspectRatio h="100%" ratio={16 / 9}>
-                                <Image w="90%" h="100%" source={require("../../../assets/TENIASE.jpg")} alt="image" />
-                            </AspectRatio>
+                            <Image h="100%" source={require("../../../assets/TENIASE.jpg")} alt="image" />
                         </Center>
                         <Text>
                             Explicação sobre a resposta
                         </Text>
+                       </Box>
                     </Modal.Body>}
                 <Modal.Footer>
                     <Button.Group space={2}>
@@ -170,7 +150,24 @@ export const Verme = ({ route }: VermeProps) => {
                 </Modal.Footer>
             </Modal.Content>
         </Modal>
+        {contentInfo && <>
+            <ScrollView flex={1} p={6} >
+                {allVermes[0].content.map(item => {
+                    return <Box key={item.title}>
+                        <Heading pt={2} fontSize="lg">{item.title}</Heading>
+                        <Text textAlign="justify" fontSize="md">{item.text}</Text>
+                        <Center h="300" my={2}>
+                            <Image
+                                alt='image'
+                                pb={1}
+                                h="100%"
+                                source={require("../../../assets/vermes/GLOSSARIO.jpg")} />
+                        </Center>
+                    </Box>
+                })}
+            </ScrollView>
 
+        </>}
     </>
     )
 }

@@ -22,14 +22,15 @@ export const CardHome = ({ title, urlImage, page }: CardHomeProps) => {
     }
 
     return <PressableAnimation onPress={handleOpenPage}>
-        <Box _dark={{
+        <Box 
+        _dark={{
             borderColor: "gray.600"
         }} borderColor="coolGray.200" pl="4" pr="4" py="2">
             <HStack justifyContent="center">
                 <Box alignItems="center">
 
                     <Box
-                        maxW="80"
+                        w="full"
                         rounded="lg"
                         overflow="hidden"
                         borderColor="coolGray.200"

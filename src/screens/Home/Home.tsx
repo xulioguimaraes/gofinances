@@ -8,6 +8,7 @@ export const Home = () => {
     return (
         <>
             <Center
+                flex={1}
                 mt={5}
             >
                 <ScrollView>
@@ -31,6 +32,6 @@ export const Home = () => {
             </Center>
 
         </>
-       
+
     )
 }
