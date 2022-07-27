@@ -3,9 +3,9 @@ import React, { ReactNode } from 'react'
 interface PressableAnimationProps {
     children: ReactNode
     onPress: () => void
-}
-export const PressableAnimation = ({ children, onPress }: PressableAnimationProps) => {
-    return <Pressable onPress={onPress}>
+} 
+export const PressableAnimation = ({ children, onPress, ...props }: PressableAnimationProps) => {
+    return <Pressable onPress={onPress} {...props}>
         {({
             isPressed
         }) => {

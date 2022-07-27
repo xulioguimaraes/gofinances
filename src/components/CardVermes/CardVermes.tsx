@@ -5,8 +5,9 @@ import { PressableAnimation } from '../PressableAnimation/PressableAnimation'
 interface CardVermesProps {
     nameImage: string
     title: string
+    idVerme: number
 }
-export const CardVermes = ({ nameImage, title }: CardVermesProps) => {
+export const CardVermes = ({ nameImage, title, idVerme }: CardVermesProps) => {
     const image = nameImage === "ANCILOSTOMÍASE" ?
         require("../../../assets/vermes/ANCILOSTOMÍASE.jpg") :
         nameImage === "ASCARIDÍASE" ?
@@ -21,7 +22,7 @@ export const CardVermes = ({ nameImage, title }: CardVermesProps) => {
                             require("../../../assets/vermes/TENIASE.jpg") : require("../../../assets/vermes/TRICURÍASE.png")
     const navigation = useNavigation()
     const handleOpenVerme = () => {
-        navigation.navigate("verme", { vermeId: 11 })
+        navigation.navigate("verme", { vermeId: idVerme })
     }
     return (
         <PressableAnimation onPress={handleOpenVerme}>
