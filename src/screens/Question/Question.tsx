@@ -1,14 +1,6 @@
-import {
-  Box,
-  Center,
-  Heading,
-  Pressable,
-  StatusBar,
-  Text,
-  useColorModeValue,
-} from "native-base";
+import { Box } from "native-base";
 import React from "react";
-import { Animated, Dimensions, useWindowDimensions, View } from "react-native";
+import { useWindowDimensions } from "react-native";
 import { SceneMap, TabView } from "react-native-tab-view";
 import { OneRoute } from "./TabPages/OneRoute";
 

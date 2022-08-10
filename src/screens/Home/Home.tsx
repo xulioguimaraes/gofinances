@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNavigation } from "@react-navigation/native"
 import { Center, ScrollView } from 'native-base'
 import { CardHome } from '../../components/CardHome/CardHome'
 

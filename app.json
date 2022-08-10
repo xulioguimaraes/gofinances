@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "gofinances",
+    "name": "worms-study",
     "slug": "gofinances",
     "version": "1.0.0",
     "assetBundlePatterns": [
@@ -8,6 +8,9 @@
     ],
     "android": {
       "package": "worms.study"
+    },
+    "ios": {
+      "bundleIdentifier": "worms.study"
     }
   }
 }

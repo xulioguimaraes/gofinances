@@ -1,49 +1,28 @@
 import { useNavigation } from "@react-navigation/native";
-import {
-  ArrowBackIcon,
-  AspectRatio,
-  Box,
-  Button,
-  Center,
-  ChevronRightIcon,
-  Container,
-  FlatList,
-  Flex,
-  FormControl,
-  Heading,
-  HStack,
-  IconButton,
-  Image,
-  Input,
-  Modal,
-  Pressable,
-  ScrollView,
-  Stack,
-  StatusBar,
-  Text,
-  VStack,
-} from "native-base";
-import React, { ReactNode, useEffect, useRef, useState } from "react";
-import { CardSelect } from "../../components/CardSelect/CardSelect";
+import { Box, ChevronRightIcon, FlatList, Heading } from "native-base";
+import React, { useEffect, useState } from "react";
 import { HeaderBar } from "../../components/HeaderBar/HeaderBar";
 import { ModalQuestion } from "../../components/ModalQuestion/ModalQuestion";
 import { PressableAnimation } from "../../components/PressableAnimation/PressableAnimation";
 import { SessionQuestion } from "../../components/SessionQuestion/SessionQuestion";
 import { allVermes } from "../../utils/vermes";
-export interface ISessionText{
+export interface ISessionText {
   title: string;
   text: string;
   image: string;
+  image2: string;
   text2: string;
   subText: {
-      title: string;
-      text: string;
-      image: string;
+    title: string;
+    text: string;
+    image: string;
+    image2: string;
   }[];
 }
 export interface IVerme {
   name: string;
   id: number;
+  answer:number;
   question: string;
   content: ISessionText[];
 }
@@ -68,8 +47,7 @@ export const Verme = ({ route }: VermeProps) => {
   const [modalVisible, setModalVisible] = React.useState(false);
 
   useEffect(() => {
-    let aux = {};
-    const aux2 = allVermes.filter((item) => {
+    allVermes.filter((item) => {
       if (item.id === params.vermeId) {
         setVerme(item);
       }
@@ -97,6 +75,7 @@ export const Verme = ({ route }: VermeProps) => {
       )}
       <ModalQuestion
         askRight={askRight}
+        valueImage={verme.answer}
         modalVisible={modalVisible}
         onRequestClose={onRequestClose}
       />
@@ -114,7 +93,7 @@ export const Verme = ({ route }: VermeProps) => {
               renderItem={({ item }) => {
                 return (
                   <>
-                    <PressableAnimation onPress={()=>handleTitle(item)}>
+                    <PressableAnimation onPress={() => handleTitle(item)}>
                       <Box
                         px={5}
                         py={4}

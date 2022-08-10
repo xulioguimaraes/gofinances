@@ -1,17 +1,4 @@
-import {
-  AspectRatio,
-  Box,
-  Center,
-  FlatList,
-  Heading,
-  HStack,
-  Image,
-  SectionList,
-  Spacer,
-  Stack,
-  Text,
-  VStack,
-} from "native-base";
+import { Center, FlatList } from "native-base";
 import React from "react";
 import { CardVermes } from "../../components/CardVermes/CardVermes";
 import nomeVermes from "../../utils/nomeVermes";
@@ -26,6 +13,8 @@ export const Vermes = () => {
             <CardVermes
               idVerme={item.id}
               nameImage={item.image}
+              description={item.desciption}
+              description2={item.desciption2}
               title={item.title.toUpperCase()}
             />
           )}
