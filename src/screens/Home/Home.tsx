@@ -18,7 +18,7 @@ export const Home = () => {
                     <CardHome
                         urlImage='../../assets/FILARIOSE.png'
                         page="question"
-                        title='Questões problematizadora' />
+                        title='Situações-problemas' />
                     <CardHome
                         urlImage='GLOSSARIO'
                         page="glossario"

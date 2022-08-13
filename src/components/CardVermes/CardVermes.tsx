@@ -86,6 +86,7 @@ export const CardVermes = ({ nameImage, title, idVerme, description, description
                       color: "violet.400",
                     }}
                     fontWeight="500"
+                    fontStyle={"italic"}
                     ml="-0.5"
                     mt="-1"
                   >
@@ -99,6 +100,7 @@ export const CardVermes = ({ nameImage, title, idVerme, description, description
                     _dark={{
                       color: "violet.400",
                     }}
+                    fontStyle={"italic"}
                     fontWeight="500"
                     ml="-0.5"
                     mt="-1"

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "worms-study",
-    "slug": "gofinances",
+    "name": "Worms Study",
+    "slug": "worms-study",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"

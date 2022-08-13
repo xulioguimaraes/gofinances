@@ -11,6 +11,13 @@ import {
 import { Vermes } from './src/screens/Vermes/Vermes';
 import { NativeBaseProvider, StatusBar } from 'native-base';
 import { Routes } from './src/routes';
+import { LinearGradient } from 'expo-linear-gradient';
+const config = {
+  dependencies: {
+    'linear-gradient': LinearGradient
+  }
+};
+
 export default function App() {
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
@@ -21,7 +28,7 @@ export default function App() {
     return null
   }
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider config={config}>
       <ThemeProvider theme={theme}>
         <StatusBar />
         <Routes />
