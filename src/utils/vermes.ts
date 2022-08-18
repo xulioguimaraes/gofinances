@@ -9,7 +9,7 @@ export const allVermes = [
       {
         title: "PARASITA",
         id: 11,
-        text: "Esta infecção é causada pelos vermes Ancylostoma duodenale e Necator americanus.",
+        text: "Esta infecção é causada pelos vermes _Ancylostoma _duodenale e _Necator _americanus.",
         image: "",
         text2: "",
         image2: "",
@@ -17,7 +17,7 @@ export const allVermes = [
           {
             title: "Adultos",
             image2: "https://i.imgur.com/76zL0wK.jpg",
-            text: "Os machos de N. Americanus medem de 5 a 9 mm de comprimento e na região posterior tem bolsa copuladora e dois espículos. As fêmeas medem 9 a 11 mm de comprimento e tem extremidade anterior afilada. Os machos de A. duodenale medem de 8 a 11 mm de comprimento, tem bolsa copuladora e dois espículos longos. As fêmeas tem de 10 a 18 mm de comprimento e cauda afilada. N. americanus tem lâminas cortantes na boca e A. duodenale tem dentes. ",
+            text: "Os machos de _N. _Americanus medem de 5 a 9 mm de comprimento e na região posterior tem bolsa copuladora e dois espículos. As fêmeas medem 9 a 11 mm de comprimento e tem extremidade anterior afilada. Os machos de _A. _duodenale medem de 8 a 11 mm de comprimento, tem bolsa copuladora e dois espículos longos. As fêmeas tem de 10 a 18 mm de comprimento e cauda afilada. _N. _americanus tem lâminas cortantes na boca e A. duodenale tem dentes. ",
             image: "https://i.imgur.com/XIjDbdi.jpg",
           },
           {
@@ -90,7 +90,7 @@ export const allVermes = [
       {
         title: "PARASITA",
         id: 22,
-        text: "O causador desta infecção é o verme Ascaris lumbricoides.",
+        text: "O causador desta infecção é o verme _Ascaris _lumbricoides.",
         image: "https://images2.imgbox.com/89/f7/ElJXrgJY_o.jpg",
         text2: "",
         image2: "",
@@ -171,7 +171,7 @@ export const allVermes = [
       {
         title: "PARASITA",
         id: 33,
-        text: "Infecção intestinal causada pelo verme nematódeo da espécie Enterobius vermicularis. ",
+        text: "Infecção intestinal causada pelo verme nematódeo da espécie _Enterobius _vermicularis. ",
         image: "",
         text2: "",
         image2: "",
@@ -250,7 +250,7 @@ export const allVermes = [
       {
         title: "PARASITA",
         id: 44,
-        text: " É causada pelo verme platelminto parasita Schistosoma mansoni, que se aloja no sistema porta humano.",
+        text: " É causada pelo verme platelminto parasita _Schistosoma _mansoni, que se aloja no sistema porta humano.",
         image: "",
         text2: "",
         image2: "",
@@ -276,7 +276,7 @@ export const allVermes = [
           {
             title: "Hospedeiros",
             image2: "",
-            text: "O ser humano é o hospedeiro definitivo e o caramujo do gênero Biomphalaria é o hospedeiro intermediário.",
+            text: "O ser humano é o hospedeiro definitivo e o caramujo do gênero _Biomphalaria é o hospedeiro intermediário.",
             image: "https://images2.imgbox.com/b4/2b/TQMZatL7_o.jpg",
           },
         ],
@@ -284,7 +284,7 @@ export const allVermes = [
       {
         title: "CICLO BIOLÓGICO",
         id: 44,
-        text: "Os vermes adultos habitam o sistema porta humano. Após a cópula a fêmea libera ovos os quais são eliminados com as fezes. Quando os ovos atingem a água ocorre a liberação da larva cercária a qual procura caramujos do gênero Biomphalaria onde penetram, se multiplicam e originam o segundo estágio larval conhecido como cercária. As cercarias são as formas infectantes a humanos.",
+        text: "Os vermes adultos habitam o sistema porta humano. Após a cópula a fêmea libera ovos os quais são eliminados com as fezes. Quando os ovos atingem a água ocorre a liberação da larva cercária a qual procura caramujos do gênero _Biomphalaria onde penetram, se multiplicam e originam o segundo estágio larval conhecido como cercária. As cercarias são as formas infectantes a humanos.",
         image: "https://images2.imgbox.com/4d/da/uXHQYna6_o.jpg",
         text2: "",
         image2: "",
@@ -329,7 +329,7 @@ export const allVermes = [
       {
         title: "PARASITA",
         id: 55,
-        text: "A INFECÇÃO é causada pelo verme nematódeo parasita Wuchereria bancrofti, também conhecido como filaria, que afeta o sistema linfático humano. ",
+        text: "A INFECÇÃO é causada pelo verme nematódeo parasita _Wuchereria _bancrofti, também conhecido como filaria, que afeta o sistema linfático humano. ",
         image: "https://images2.imgbox.com/e5/ce/qWaKywOh_o.jpg",
         subText: [
           {
@@ -353,7 +353,7 @@ export const allVermes = [
           {
             title: "Hospedeiros",
             image2: "",
-            text: "O hospedeiro intermediário é o mosquito do gênero Culex e o hospedeiro definitivo é o ser humano.",
+            text: "O hospedeiro intermediário é o mosquito do gênero _Culex e o hospedeiro definitivo é o ser humano.",
             image: "https://images2.imgbox.com/41/fb/mw5sFhfD_o.jpg",
           },
         ],
@@ -372,7 +372,7 @@ export const allVermes = [
       {
         title: "CONTAMINAÇÃO",
         id: 55,
-        text: "Picada da fêmea infectada do inseto vetor do gênero Culex. Esses insetos tem hábitos noturnos, justamente o período em que as microfilárias estão circulando no sangue periférico.",
+        text: "Picada da fêmea infectada do inseto vetor do gênero _Culex. Esses insetos tem hábitos noturnos, justamente o período em que as microfilárias estão circulando no sangue periférico.",
         image: "",
         text2: "",
         image2: "",
@@ -410,7 +410,7 @@ export const allVermes = [
       {
         title: "PARASITA",
         id: 66,
-        text: "Infecção causada pelos parasitas Taenia solium e Taenia saginata também conhecidas popularmente como “solitárias”.",
+        text: "Infecção causada pelos parasitas _Taenia _solium e _Taenia _saginata também conhecidas popularmente como “solitárias”.",
         image: "",
         subText: [
           {
@@ -434,7 +434,7 @@ export const allVermes = [
           {
             title: "Hospedeiros",
             image2: "",
-            text: "O hospedeiro intermediário da Taenia solium é o porco e da Taenia saginata é o boi. O ser humano é o hospedeiro definitivo do parasita. Caso o ser humano faça ingestão direta de proglotes do parasita ele desenvolverá a doença cisticercose humana, a qual pode ter sérias complicações.",
+            text: "O hospedeiro intermediário da _Taenia _solium é o porco e da _Taenia _saginata é o boi. O ser humano é o hospedeiro definitivo do parasita. Caso o ser humano faça ingestão direta de proglotes do parasita ele desenvolverá a doença cisticercose humana, a qual pode ter sérias complicações.",
             image: "",
           },
         ],
@@ -489,7 +489,7 @@ export const allVermes = [
       {
         title: "PARASITA",
         id: 77,
-        text: "Infecção intestinal causada pelo verme Trichiurus trichiura, também conhecido por verme-chicote.",
+        text: "Infecção intestinal causada pelo verme _Trichiurus _trichiura, também conhecido por verme-chicote.",
         image: "",
         text2: "",
         image2: "",
