@@ -4,13 +4,14 @@ interface OneRouteProps {
   id: string;
 }
 export const OneRoute = ({ id }: OneRouteProps) => {
+  const keyM = Math.random()
   return (
     <>
       <ScrollView>
         {allQuestion.map((item) => {
           if (item.id === id) {
             return (
-              <Box pt={2} px={4} key={item.id} mb={3}>
+              <Box pt={2} px={4} key={item.id+keyM} mb={3}>
                 <Box bgColor="primary.100" rounded={8} shadow={6} p={2} mb={3}>
                   <Text fontWeight="bold" textAlign="justify" fontSize="lg">
                     {item.question}

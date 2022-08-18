@@ -8,6 +8,7 @@ export const allVermes = [
     content: [
       {
         title: "PARASITA",
+        id: 11,
         text: "Esta infecção é causada pelos vermes Ancylostoma duodenale e Necator americanus.",
         image: "",
         text2: "",
@@ -41,6 +42,7 @@ export const allVermes = [
       },
       {
         title: "CICLO BIOLÓGICO",
+        id: 11,
         text: "Os vermes adultos vivem no intestino delgado humano, seu hospedeiro definitivo. Os parasitas perfuram a mucosa intestinal e se alimentam de sangue. O ciclo de vida é do tipo monoxênico. Os adultos se reproduzem sexuadamente e liberam ovos.",
         image: "https://images2.imgbox.com/55/4f/nijdLeAK_o.jpg",
         text2: "",
@@ -49,6 +51,7 @@ export const allVermes = [
       },
       {
         title: "CONTAMINAÇÃO",
+        id: 11,
         text: "Ocorre pela penetração na pele de larvas do parasito no solo contaminado. ",
         image: "",
         text2: "",
@@ -57,6 +60,7 @@ export const allVermes = [
       },
       {
         title: "SINTOMAS, DIAGNÓSTICO E TRATAMENTO",
+        id: 11,
         text: "A penetração das larvas causa irritações na pele. A passagem da larva pelo sistema respiratório pode causar tosse, inflamação na garganta, febre, coriza, faringite, laringite, sensação de obstrução na garganta, dor ao falar e deglutir. A acentuada perda de sangue causada pelos vermes ancilostomídeos adultos provocam uma intensa anemia por deficiência de ferro, o que explica os sintomas como fraqueza, sonolência, indisposição, etc.",
         text2:
           "Os principais exames que atestam a presença dos parasitos são: clínico, laboratorial de sangue e parasitológico de fezes. O tratamento é realizado com drogas anti-helmínticas e reposição de ferro através de alimentação ou medicação.",
@@ -67,6 +71,7 @@ export const allVermes = [
       },
       {
         title: "PROFILAXIA",
+        id: 11,
         text: "Andar calçado, bons hábitos de higiene pessoal, saneamento básico e melhoria das condições socioeconômicas são as principais medidas preventivas da ancilostomíase. O tratamento medicamentoso preventivo também é importante, principalmente em escolares de zonas rurais.",
         image: "",
         text2: "",
@@ -84,6 +89,7 @@ export const allVermes = [
     content: [
       {
         title: "PARASITA",
+        id: 22,
         text: "O causador desta infecção é o verme Ascaris lumbricoides.",
         image: "https://images2.imgbox.com/89/f7/ElJXrgJY_o.jpg",
         text2: "",
@@ -117,6 +123,7 @@ export const allVermes = [
       },
       {
         title: "CICLO BIOLÓGICO",
+        id: 22,
         text: "Os vermes adultos vivem no intestino delgado, principalmente no jejuno e íleo. São dioicos e apresentam ciclo evolutivo do tipo monoxênico. ",
         text2: "",
         image2: "",
@@ -125,6 +132,7 @@ export const allVermes = [
       },
       {
         title: "CONTAMINAÇÃO",
+        id: 22,
         text: "Através da ingestão de água ou alimentos contaminados com ovos do verme.",
         text2: "",
         image2: "",
@@ -133,6 +141,7 @@ export const allVermes = [
       },
       {
         title: "SINTOMAS, DIAGNÓSTICO E TRATAMENTO",
+        id: 22,
         text: "Quando a carga parasitária é baixa em geral os sintomas são leves ou inexistentes. Com alta carga parasitária, porém podem ocorrer lesões hepáticas e pulmonares (provocadas pelas larvas); os vermes adultos podem provocar déficit nutricional, edema, urticária, convulsões, irritação na parede intestinal, obstrução intestinal (devido ao acúmulo de um grande número de vermes). Complicações ectópicas podem ocorrer no apêndice cecal, duto colédoco e os vermes podem sair pela boca e orelha, entrar na orelha média e na tuba auditiva.",
         text2:
           "Exame de fezes detectam os ovos da lombriga. O tratamento é feito com drogas anti-helmínticas.",
@@ -143,6 +152,7 @@ export const allVermes = [
       },
       {
         title: "PROFILAXIA",
+        id: 22,
         text: "Tratamento dos doentes, saneamento básico, educação para a saúde com noções de higiene pessoal e ambiental, tratamento da água, higienização e desinfestação de vegetais.",
         text2: "",
         image2: "",
@@ -160,6 +170,7 @@ export const allVermes = [
     content: [
       {
         title: "PARASITA",
+        id: 33,
         text: "Infecção intestinal causada pelo verme nematódeo da espécie Enterobius vermicularis. ",
         image: "",
         text2: "",
@@ -193,6 +204,7 @@ export const allVermes = [
       },
       {
         title: "CICLO BIOLÓGICO",
+        id: 33,
         text: "Os vermes adultos vivem no apêndice cecal, livres ou aderidos e se alimentando de conteúdo intestinal do hospedeiro. As fêmeas carregadas de ovos são comumente encontradas no ânus e na região perianal. São dioicos e exibem ciclo do tipo monoxênico. ",
         image: "https://images2.imgbox.com/c8/57/j8ypWqt4_o.png",
         text2: "",
@@ -201,6 +213,7 @@ export const allVermes = [
       },
       {
         title: "CONTAMINAÇÃO",
+        id: 33,
         text: "É feita do ânus para a boca através das mãos. Pode ocorrer transmissão indireta por inalação de ovos em roupas, por exemplo.",
         image: "",
         text2: "",
@@ -209,6 +222,7 @@ export const allVermes = [
       },
       {
         title: "SINTOMAS, DIAGNÓSTICO E TRATAMENTO",
+        id: 33,
         text: "A descida do parasita para a região próxima ao ânus causa intenso prurido anal, principalmente à noite e possivelmente irritações anais e perianais. O diagnóstico é feito com exame clínico, e detecção de ovos usando fita adesiva e posterior análise em microscópio no laboratório. O tratamento é feito com droga anti-helmíntica, ",
         image: "",
         text2: "",
@@ -217,6 +231,7 @@ export const allVermes = [
       },
       {
         title: "PROFILAXIA",
+        id: 33,
         text: "É focada no tratamento das pessoas contaminadas na família, hábitos de higiene pessoal, manejo adequado das roupas intimas e de cama usadas pelos indivíduos infectados. ",
         image: "",
         text2: "",
@@ -234,6 +249,7 @@ export const allVermes = [
     content: [
       {
         title: "PARASITA",
+        id: 44,
         text: " É causada pelo verme platelminto parasita Schistosoma mansoni, que se aloja no sistema porta humano.",
         image: "",
         text2: "",
@@ -267,6 +283,7 @@ export const allVermes = [
       },
       {
         title: "CICLO BIOLÓGICO",
+        id: 44,
         text: "Os vermes adultos habitam o sistema porta humano. Após a cópula a fêmea libera ovos os quais são eliminados com as fezes. Quando os ovos atingem a água ocorre a liberação da larva cercária a qual procura caramujos do gênero Biomphalaria onde penetram, se multiplicam e originam o segundo estágio larval conhecido como cercária. As cercarias são as formas infectantes a humanos.",
         image: "https://images2.imgbox.com/4d/da/uXHQYna6_o.jpg",
         text2: "",
@@ -275,6 +292,7 @@ export const allVermes = [
       },
       {
         title: "CONTAMINAÇÃO",
+        id: 44,
         text: "Através da penetração ativas de larvas cercarias na pele ao tomar banho em águas contaminadas. O caramujo é o vetor da doença. ",
         image: "",
         text2: "",
@@ -283,6 +301,7 @@ export const allVermes = [
       },
       {
         title: "SINTOMAS, DIAGNÓSTICO E TRATAMENTO",
+        id: 44,
         text: "Os Sintomas são: dermatite (inflamação na pele) devido a entrada das larvas, reação inflamatória do tipo granuloma em diversos órgãos, principalmente no fígado e inchaço do fígado e baço (hepatoesplenomegalia). A doença é detectada através de exame clínico e exame de fezes. A administração de medicamentos antiparasitários é utilizada para tratar a doença.",
         image: "",
         text2: "",
@@ -291,6 +310,7 @@ export const allVermes = [
       },
       {
         title: "PROFILAXIA",
+        id: 44,
         text: "Controle dos caramujos transmissores, saneamento básico, instalações de água e esgoto sanitário evitar tomar banho em águas contaminadas, educação sanitária diagnóstico e tratamento dos casos humanos.",
         image: "",
         text2: "",
@@ -308,6 +328,7 @@ export const allVermes = [
     content: [
       {
         title: "PARASITA",
+        id: 55,
         text: "A INFECÇÃO é causada pelo verme nematódeo parasita Wuchereria bancrofti, também conhecido como filaria, que afeta o sistema linfático humano. ",
         image: "https://images2.imgbox.com/e5/ce/qWaKywOh_o.jpg",
         subText: [
@@ -341,6 +362,7 @@ export const allVermes = [
       },
       {
         title: "CICLO BIOLÓGICO",
+        id: 55,
         text: "Os vermes adultos vivem no sistema linfático e sanguíneo humano. Podem viver por anos no organismo hospedeiro. São dioicos, com ciclo evolutivo do tipo heteroxênico. ",
         image: "https://images2.imgbox.com/df/ad/8DDtk5Fm_o.jpg",
         text2: "",
@@ -349,6 +371,7 @@ export const allVermes = [
       },
       {
         title: "CONTAMINAÇÃO",
+        id: 55,
         text: "Picada da fêmea infectada do inseto vetor do gênero Culex. Esses insetos tem hábitos noturnos, justamente o período em que as microfilárias estão circulando no sangue periférico.",
         image: "",
         text2: "",
@@ -357,6 +380,7 @@ export const allVermes = [
       },
       {
         title: "SINTOMAS, DIAGNÓSTICO E TRATAMENTO",
+        id: 55,
         text: "Os sintomas mais comuns são: linfangite (inflamação dos vasos linfáticos), linfadenite (inflamação dos gânglios linfáticos), febre, mal-estar. As manifestações crônicas compreendem o linfedema (inchaço ou edema linfático), hidrocele e elefantíase, que é o inchaço principalmente das pernas. O inchaço típico desta doença também pode progredir para o saco escrotal e mamas. ",
         text2:
           "O diagnóstico é clínico e com exame de sangue, onde se pesquisa a presença das microfilárias. O tratamento é feito com drogas antiparasitárias",
@@ -367,6 +391,7 @@ export const allVermes = [
       },
       {
         title: "PROFILAXIA",
+        id: 55,
         text: "Controle do vetor e uso de proteção contra a picada do mosquito.",
         image: "",
         text2: "",
@@ -384,6 +409,7 @@ export const allVermes = [
     content: [
       {
         title: "PARASITA",
+        id: 66,
         text: "Infecção causada pelos parasitas Taenia solium e Taenia saginata também conhecidas popularmente como “solitárias”.",
         image: "",
         subText: [
@@ -417,6 +443,7 @@ export const allVermes = [
       },
       {
         title: "CICLO BIOLÓGICO",
+        id: 66,
         text: "É do tipo heteroxênico. Os adultos vivem no duodeno (intestino delgado) e são hermafroditas. Cada proglote contém estruturas reprodutoras de ambos os sexos e assim conseguem se autofecundar, gerando muitos ovos.",
         image: "https://images2.imgbox.com/e7/e8/PeDtqBD3_o.jpg",
         text2: "",
@@ -425,6 +452,7 @@ export const allVermes = [
       },
       {
         title: "CONTAMINAÇÃO",
+        id: 66,
         text: "Por meio de Ingestão de carne crua ou mal cozida contaminada com larvas cisticercos. ",
         image: "",
         text2: "",
@@ -433,6 +461,7 @@ export const allVermes = [
       },
       {
         title: "SINTOMAS, DIAGNÓSTICO E TRATAMENTO",
+        id: 66,
         text: "Os sintomas incluem bulimia, anorexia, náuseas, vômitos, dores abdominais, diarreias, constipação, fadiga, irritação, insônia, cefaléias (dores de cabeça) e vertigens. O diagnóstico pode ser feito por meio de exame de fezes. Drogas antiparasitárias são usadas pra eliminar o verme. ",
         image: "",
         text2: "",
@@ -441,6 +470,7 @@ export const allVermes = [
       },
       {
         title: "PROFILAXIA",
+        id: 66,
         text: "Fiscalização em matadouros e frigoríferos, cozinhar bem a carne, educação sanitária, tratamento dos doentes e saneamento básico.",
         image: "",
         text2: "",
@@ -458,6 +488,7 @@ export const allVermes = [
     content: [
       {
         title: "PARASITA",
+        id: 77,
         text: "Infecção intestinal causada pelo verme Trichurus trichiura, também conhecido por verme-chicote.",
         image: "",
         text2: "",
@@ -491,6 +522,7 @@ export const allVermes = [
       },
       {
         title: "CICLO BIOLÓGICO",
+        id: 77,
         text: "É do tipo monoxênico. São dioicos e com nítido dimorfismo sexual. Parasitam o intestino grosso humano, principalmente o ceco e o cólon ascendente. A fêmea libera de 3 a 5 mil ovos por dia. ",
         image: "https://images2.imgbox.com/c5/6c/6m8YRiX2_o.jpg",
         text2: "",
@@ -499,6 +531,7 @@ export const allVermes = [
       },
       {
         title: "CONTAMINAÇÃO",
+        id: 77,
         text: "Por ingestão de ovos do parasito em águas e alimentos contaminados. ",
         image: "",
         text2: "",
@@ -507,6 +540,7 @@ export const allVermes = [
       },
       {
         title: "SINTOMAS, DIAGNÓSTICO E TRATAMENTO",
+        id: 77,
         text: "A maioria dos pacientes com carga parasitária leve são assintomáticos. Com a carga parasitária moderada ou alta podem surgir: dor de cabeça, dor epigástrica ou abdominal, diarreia (com ou sem sangue), náusea, vômito, anemia, desnutrição grave e em alguns casos lesões na mucosa intestinal e prolapso retal (intestino “pula” pra fora). O diagnóstico é clínico e laboratorial através de exame de fezes. Tratamento é realizado com drogas anti-helmínticas.",
         image: "",
         text2: "",
@@ -515,6 +549,7 @@ export const allVermes = [
       },
       {
         title: "PROFILAXIA",
+        id: 77,
         text: "Saneamento básico, higiene pessoal adequada e cuidados com os alimentos.",
         image: "",
         text2: "",

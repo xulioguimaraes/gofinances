@@ -4,14 +4,12 @@ import { Pressable } from "react-native";
 interface CardSelectProps {
   setImageSelect: React.Dispatch<React.SetStateAction<number>>;
   imageSelect: number;
-  textImage: string;
   value: number;
 }
 export const CardSelect = ({
   imageSelect,
   setImageSelect,
   value,
-  textImage,
 }: CardSelectProps) => {
   const image =
     value === 1
@@ -43,26 +41,6 @@ export const CardSelect = ({
           />
         </Box>
       </Pressable>
-      <Box
-        bg={{
-          linearGradient: {
-            colors: ["gray.500", "transparent"],
-            start: [0, 1],
-            end: [0.1, 0],
-            location: [20, 80],
-          },
-        }}
-        left={0}
-        pl={2}
-        pr={3}
-        pt={2}
-        bottom={0}
-        position={"absolute"}
-      >
-        <Heading color={"text.900"} textTransform={"capitalize"}>
-          {textImage}
-        </Heading>
-      </Box>
     </Center>
   );
 };

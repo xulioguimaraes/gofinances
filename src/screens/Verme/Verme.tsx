@@ -10,6 +10,7 @@ export interface ISessionText {
   title: string;
   text: string;
   image: string;
+  id: number;
   image2: string;
   text2: string;
   subText: {
@@ -22,7 +23,7 @@ export interface ISessionText {
 export interface IVerme {
   name: string;
   id: number;
-  answer:number;
+  answer: number;
   question: string;
   content: ISessionText[];
 }
@@ -115,6 +116,7 @@ export const Verme = ({ route }: VermeProps) => {
                   </>
                 );
               }}
+              keyExtractor={item=>item.title}
             />
           </Box>
         </>

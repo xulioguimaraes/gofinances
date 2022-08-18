@@ -8,7 +8,6 @@ export const Home = () => {
         <>
             <Center
                 flex={1}
-                mt={5}
             >
                 <ScrollView>
                     <CardHome

@@ -4,6 +4,8 @@ import { CardVermes } from "../../components/CardVermes/CardVermes";
 import nomeVermes from "../../utils/nomeVermes";
 
 export const Vermes = () => {
+  const keyM = Math.random()
+
   return (
     <>
       <Center mt="2">

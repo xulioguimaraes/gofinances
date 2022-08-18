@@ -13,7 +13,7 @@ export const CardHome = ({ title, urlImage, page }: CardHomeProps) => {
         urlImage === "GLOSSARIO" ?
             require("../../../assets/Home/GLOSSARIO.jpg") :
             urlImage === "CREDITOS" ?
-                require("../../../assets/Home/preta.jpg") :
+                require("../../../assets/Home/Creditos.jpg") :
                 require("../../../assets/Home/question.jpg")
 
     const navigation = useNavigation()

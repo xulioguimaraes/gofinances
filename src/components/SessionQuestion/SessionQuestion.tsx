@@ -51,31 +51,26 @@ export const SessionQuestion = ({
           <Text>Qual a forma de transmição da {verme.name}?</Text>
           <Stack justifyContent="center" mt={4} space={2}>
             <CardSelect
-              textImage="CARAMUJO"
               imageSelect={imageSelect}
               value={1}
               setImageSelect={setImageSelect}
             />
             <CardSelect
-              textImage="MOSQUITO"
               imageSelect={imageSelect}
               value={2}
               setImageSelect={setImageSelect}
             />
             <CardSelect
-              textImage="PÉ DESCALÇO"
               imageSelect={imageSelect}
               value={3}
               setImageSelect={setImageSelect}
             />
             <CardSelect
-              textImage="PORCO E BOI"
               imageSelect={imageSelect}
               value={4}
               setImageSelect={setImageSelect}
             />
             <CardSelect
-              textImage="VIA ORAL"
               imageSelect={imageSelect}
               value={5}
               setImageSelect={setImageSelect}
