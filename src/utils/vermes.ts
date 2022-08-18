@@ -489,7 +489,7 @@ export const allVermes = [
       {
         title: "PARASITA",
         id: 77,
-        text: "Infecção intestinal causada pelo verme Trichurus trichiura, também conhecido por verme-chicote.",
+        text: "Infecção intestinal causada pelo verme Trichiurus trichiura, também conhecido por verme-chicote.",
         image: "",
         text2: "",
         image2: "",
